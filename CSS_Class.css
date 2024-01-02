@@ -1,0 +1,84 @@
+*{
+    background-color: rgb(48, 48, 48);
+    border: 1px solid white;
+    margin: 0px;
+    padding: 0px;
+}
+#Short{
+    color: rgb(157, 0, 255);
+    width: 50%;
+    text-align: center;
+    margin: 20px;
+    padding: 1px;
+    font-weight:700;
+}   
+
+li{
+    color: violet;
+}
+#List{
+    font-size: larger;
+    font-weight: bolder;
+}
+.Player{
+            text-align: center;
+            padding: 1px;
+            width: 300px;
+            border: 0px;
+            font-weight: bold;
+        }
+
+
+        .resize,.fit{
+            padding: 0px;
+            margin: 0px 150px 10px;
+            background-color: skyblue;
+            color: rgb(0, 0, 0);
+        }
+h1{
+    background-color: aqua;
+    font-size: xx-large;
+}
+.para{
+    visibility: collapse;
+}
+
+p{
+    box-shadow: 10px 10px 10px violet;
+    color: rgb(3, 157, 144);
+    background-color: aliceblue;
+    width: 50%; ;
+    padding: 30px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 21px;
+}
+.blog{
+    background-color: rgb(242, 255, 1);
+    border-left: 20px solid ;
+    border-right: 20px solid;
+    margin: 0px;
+    padding: 0px 10px 0px 20px;
+    padding-left: 30px;
+    box-shadow: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+span{
+    border: 1px solid red;
+    background-color: aliceblue;
+    display: block;
+    font-weight: bolder;
+    padding: 10px;
+
+}
+
+header{
+    padding: 0px;
+    margin: 0px;
+    background-color: rgb(0, 0, 0);
+    height: 300px;
+    background-image: url('IMG/Squid.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
