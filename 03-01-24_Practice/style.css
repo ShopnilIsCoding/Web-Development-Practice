@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.flex2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-color: aqua;
+    border-width: 5px;
+    border-style: solid;
+
+    }
+    .social, .cv {
+        /* Remove the background and clip-path properties for better visibility */
+        height: 30vh;
+        width: 30vh;
+    }
+
+    .social {
+        background-image: url('../IMG/social2.jpg');
+        background-size: cover;
+        background-position: left;
+        clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    }
+
+    .cv {
+        background-image: url('../IMG/social2.jpg');
+        background-size: cover;
+        background-position: right;
+        clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+    }
+.socil{
+
+font-size: 50px;
+text-align: center;
+padding: 5%;
+text-wrap: nowrap;
+color: rgb(128, 0, 214)
+}
+.article{
+margin: 40px 40px;
+background-color: rgb(192, 250, 255);
+padding: 30px;
+border-color: black ;
+border-width: 2px;
+border-style: dotted;
+background: linear-gradient(60deg,pink,rgb(197, 240, 255),rgb(255, 186, 255));
+
+}
+.span{
+    border-color: rgb(255, 17, 0) ;
+border-width: 2px;
+border-style: dashed;
+font-weight: bolder;
+}
+.article {
+    margin: 40px 40px;
+    background-color: rgb(192, 250, 255);
+    padding: 30px;
+    border-color: black;
+    border-width: 2px;
+    border-style: dotted;
+    background: linear-gradient(60deg, pink, rgb(197, 240, 255), rgb(255, 186, 255));
+    display: flex;
+    flex-direction: column; /* Set the flex container to column layout */
+    box-shadow: 10px 10px 10px ;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex div, #p {
+    min-width: 200px;
+    padding: 40px 20px;
+    margin-bottom: 30px;
+    box-shadow: 5px 5px 5px 5px rgb(126, 31, 177) ;
+}
+
+.flex p {
+    width: 100%;
+}
+
+h2 {
+    text-align: center;
+    color: violet;
+    order: -1; /* Set the order to -1 to place it at the beginning */
+}
