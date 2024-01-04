@@ -15,8 +15,8 @@ position: relative;
 border-width: 2px;
 border-style: dotted;
 left: 50%;
-top: 50%;
-transform: translate(-50%,-50%);
+top: 30%;
+transform: translate(-30%,-50%);
 }
 #Fst{
     position: absolute;
@@ -59,4 +59,23 @@ h1{
     left: 0%;
     background-color: red;
     clip-path: polygon(80% 50%, 0 0, 0 100%);
+}
+#holder{
+    position: absolute;
+    height: 480px;
+    width: 20px;
+    background-color:  rgb(255, 215, 0);
+    top: 50%%;
+    left: -2px;
+    border-top-right-radius: 50px;
+    border-width: 2px;
+    border-style: dotted;
+}
+#holder2{
+    background-color: rgb(165, 75, 42);
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    top: 100%;
+    left: -70%;
 }
