@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.container{
+    height: 100vh;
+    background: linear-gradient(45deg,pink,rgb(131, 234, 255),lavender);
+}
+#Main{
+height: 240px;
+width: 406px;
+background: linear-gradient(45deg,rgb(250, 255, 160),rgb(255, 255, 255),rgb(220, 92, 255));
+position: relative;
+border-width: 2px;
+border-style: dotted;
+left: 50%;
+top: 50%;
+transform: translate(-50%,-50%);
+}
+#Fst{
+    position: absolute;
+    background-color: black;
+    height: 80px;
+    width: 405px;
+    left: 50%;
+    transform: translate(-50%);
+}
+#Snd{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    height: 80px;
+    width: 405px;
+    left: 50%;
+    top: 33.34%;
+    transform: translate(-50%);
+}
+#Trd{
+    position: absolute;
+    background-color: rgb(0, 255, 50);
+    height: 80px;
+    width: 405px;
+    left: 50%;
+    top:66.67%;
+    transform: translate(-50%);
+}
+h1{
+    text-align: center;
+    position: relative;
+    top: 50%;
+    left: 15%;
+    transform: translate(0%,-50%);
+    font-size: xx-large;
+}
+.triangle{
+    position: absolute;
+    height: 240px;
+    width: 200px;
+    left: 0%;
+    background-color: red;
+    clip-path: polygon(80% 50%, 0 0, 0 100%);
+}
