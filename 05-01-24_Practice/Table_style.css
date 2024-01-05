@@ -1,0 +1,24 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+td{
+    border: solid rgb(130, 130, 130) ;
+    border-width: 1px;
+    padding: 4px;
+}
+th{
+    border: solid rgb(130, 130, 130) ;
+    border-width: 1px;
+    padding: 4px;
+    font-weight: bold;
+    font-size:medium;
+}
+h2{
+    margin-bottom: 20px;
+}
+fieldset {
+    width: fit-content;
+    border-color: black;
+    margin: auto;
+}
