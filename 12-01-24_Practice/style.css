@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@200;400;500&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: Sora;
+}
+body
+{
+    background-image: url('./img/bg-image.png.svg');
+    height: 100vh;
+    width: 1280px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+header
+{
+    display: flex;
+    gap: 10px;
+    max-width: fit-content;
+   margin-left: 4rem;
+   margin-top: 1rem;
+   align-items: center;
+}
+.Container img
+{
+    width: 4%;
+}
+.Container h1
+{
+    color: white;
+    text-align: center;
+    padding: 0 auto;
+    font-size: 1em;
+    width: fit-content;
+}
+main
+{
+    max-width: 65%;
+    margin: 0 auto;
+}
+.Text
+{
+    max-width: 90%;
+    margin: 50px auto;
+    text-align: center;
+}
+.Text h1
+{
+    color: white;
+    font-size:4em;
+}
+.Text p
+{
+    color: white;
+    font-size: 2em;
+}
+
+.Form_Container
+{
+   background: rgba(255, 255, 255, 0.446);
+    width: auto;
+    border-radius: 5px;
+    padding: 20px;
+}
+ 
+.grid
+{
+    display: grid;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:640px) and (max-width:1024px) {
+    body
+    {
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+}
