@@ -1,18 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@200;400;500&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+  :root {
+    --base-font-size: 16px; /* Default base font size for 1280px screen */
+  }
+  
 *
 {
     margin: 0;
     padding: 0;
-    font-family: Sora;
+    font-family: 'Be Vietnam Pro';
+    
 }
 body
 {
     background-image: url('./img/bg-image.png.svg');
-    height: 100vh;
-    width: 1280px;
+    height: auto;
+    width: auto;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    font-size: var(--base-font-size);
+    margin: 0 auto;
 }
 header
 {
@@ -32,13 +40,14 @@ header
     color: white;
     text-align: center;
     padding: 0 auto;
-    font-size: 1em;
+    font-size: 1rem;
     width: fit-content;
 }
 main
 {
     max-width: 65%;
     margin: 0 auto;
+    margin-bottom: 5rem;
 }
 .Text
 {
@@ -55,34 +64,181 @@ main
 {
     color: white;
     font-size: 2em;
+    margin-top: 1rem;
 }
 
 .Form_Container
 {
-   background: rgba(255, 255, 255, 0.446);
+   background: rgba(255, 255, 255, 0.263);
     width: auto;
-    border-radius: 5px;
+    border-radius: 1.5rem;
     padding: 20px;
 }
  
 .grid
 {
     display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+
+.place
+{
+    width: calc(100% - 20px);
+    height: 4rem;
+    border-radius: 10px;
+    border: none;
+    padding-left: 20px;
+}
+
+.select
+{
+    width: 100%;
+    font-weight: 500;
+    background-color: white;
+    font-size: 0.9rem;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+select
+{
+    cursor: pointer;
+}
+label
+{
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+input::placeholder
+{
+    color: rgb(160, 160, 160);
+    font-weight: 500;
+    font-size: 0.9rem;
+    
+}
+
+
+#Message
+{
+    border-radius: 10px;
+    border: none;
+    resize: none;
+    width: calc(100% - 3rem);
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+.div4
+{
+    margin-bottom: 20px;
+}
+
+.button
+{
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: 670;
+    color: rgb(83, 70, 201);
+    height: 4rem;
+    margin-top: 1.2rem;
+    cursor: pointer;
+    
 }
 
 
 
 
 
-
-
-
-
-@media screen and (min-width:640px) and (max-width:1024px) {
+@media screen and (min-width:641px) and (max-width:1024px) {
+    :root {
+        --base-font-size: 12px; /* Adjusted base font size for 640px screen */
+      }
+    .Text *
+    {
+        
+        font-size: var(--base-font-size);
+    }
     body
     {
         width: 100%;
         margin: 0 auto;
     }
+    main
+    {
+        max-width: 90%;
+    }
+    .Text
+{
+    max-width: 60%;
+}
+.Container img
+{
+    width: 5%;
+}
+.Container h1
+{
     
+    
+    
+    font-size: 1.5rem;
+    
+}
+header
+{
+   margin-left: 2rem;
+   margin-top: 1.5rem;
+}
+    
+}
+@media screen and (max-width: 640px) {
+    :root {
+        --base-font-size: 9px; /* Adjusted base font size for 640px screen */
+      }
+    body
+    {
+        width: 100%;
+        font-size: var(--base-font-size);
+    }
+    .grid
+    {
+        grid-template-columns: repeat(1,1fr);
+    }
+    header
+{
+   margin-left: 1.5rem;
+   margin-top: 1.5rem;
+}
+.Text
+{
+    max-width: 60%;
+}
+.Text p
+{
+    color: white;
+    font-size: 1.2rem;
+}
+    main
+    {
+        max-width: 90%;
+    }
+    .button
+    {
+        margin-bottom: 70px;
+    }
+    .Container img
+{
+    width: 5%;
+}
+.Container h1
+{
+    
+    
+    
+    font-size: 1.5rem;
+    
+}
 }
