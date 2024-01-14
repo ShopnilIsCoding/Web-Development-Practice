@@ -99,7 +99,14 @@ margin: 40px auto;
     position: absolute;
     background-repeat: no-repeat;
     bottom: 0;
+    left: 0;
     z-index: 1;
+}
+.img2>img
+{
+    padding-left: 2%;
+    padding-top: 5%;
+    clip-path: polygon(150% 0%, 100% 38%, 100% 100%, 0 100%, 0 14%);
 }
 footer
 {
