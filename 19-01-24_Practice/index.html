@@ -3,13 +3,23 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <meta property="og:image"
+            content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFASYPNBlz8jF8hJ3L7xs-_xr5V1uGcC7lRYNwo_tPgJxeZ3-xsdX8Fs-8qfhWhRSbobY&usqp=CAU">
+        <meta property="og:url"
+            content="https://ShopnilIsCoding.github.io/Web-Development-Practice/19-01-24_Practice/">
+
+        <title>Bike Shop</title>
 
         <link
             href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css"
             rel="stylesheet" type="text/css" />
         <script src="https://cdn.tailwindcss.com"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+            integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="shortcut icon" href="./images/others/cbr.png"
+            type="image/x-icon">
 
         <!-- google fonts -->
 
@@ -19,7 +29,7 @@
             href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap"
             rel="stylesheet">
 
-            <style>
+        <style>
                 .pop{
 
                     font-family: 'Poppins', sans-serif;
@@ -30,7 +40,7 @@
     <body class="pop">
         <header class="bg-cyan-950 w-full">
             <div class="container mx-auto">
-                
+
                 <!-- heading nav  -->
 
                 <div class="navbar">
@@ -38,7 +48,8 @@
                         <div tabindex="0" role="button"
                             class="btn btn-ghost lg:hidden">
                             <svg xmlns="http://www.w3.org/2000/svg"
-                                class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24"
+                                class="h-5 w-5 text-white" fill="none"
+                                viewBox="0 0 24 24"
                                 stroke="currentColor"><path
                                     stroke-linecap="round"
                                     stroke-linejoin="round" stroke-width="2"
@@ -96,50 +107,66 @@
 
             <!-- shop section  -->
 
-
             <section class="container m-auto">
-                <h2 class="font-semibold text-3xl  lg:text-5xl text-orange-500 text-center mt-4">Fetured Bikes In This Year</h2>
-                <p class="text-center text-orange-200 font-light text-2xl">Best bike collection</p>
+                <h2
+                    class="font-semibold text-3xl  lg:text-5xl text-orange-500 text-center mt-4">Fetured
+                    Bikes In This Year</h2>
+                <p class="text-center text-orange-200 font-light text-2xl">Best
+                    bike collection</p>
                 <div class="carousel w-full">
                     <div id="item1" class="carousel-item w-full">
                         <div class="card w-full glass mt-4">
-                            <figure><img src="./images/slider/bike2.png" alt="car!"/></figure>
+                            <figure><img src="./images/slider/bike2.png"
+                                    alt="car!" /></figure>
                             <div class="card-body">
-                              <h2 class="font-semibold text-orange-600 text-3xl text-center">Ducati Scramble</h2>
-                              <p class="text-5xl text-yellow-500 text-center glass w-40 m-auto ">2999$</p>
-                              <div class="card-actions justify-end">
-                                <button class="btn btn-outline btn-warning">Pre-Order</button>
-                              </div>
+                                <h2
+                                    class="font-semibold text-orange-600 text-3xl text-center">Ducati
+                                    Scramble</h2>
+                                <p
+                                    class="text-5xl text-yellow-500 text-center glass w-40 m-auto ">2999$</p>
+                                <div class="card-actions justify-end">
+                                    <button
+                                        class="btn btn-outline btn-warning">Pre-Order</button>
+                                </div>
                             </div>
-                          </div>
+                        </div>
                     </div>
                     <div id="item2" class="carousel-item w-full">
                         <div class="card w-full glass mt-4">
-                            <figure><img src="./images/slider/bike3.png" alt="car!"/></figure>
+                            <figure><img src="./images/slider/bike3.png"
+                                    alt="car!" /></figure>
                             <div class="card-body">
-                              <h2 class="font-semibold text-orange-400 text-3xl text-center">Ducati Panigale</h2>
-                              <p class="text-5xl text-yellow-500 text-center w-40 m-auto glass flex items-center h-full">7399$</p>
-                              <div class="card-actions justify-end">
-                                <button class="btn btn-outline btn-warning">Pre-Order</button>
-                              </div>
+                                <h2
+                                    class="font-semibold text-orange-400 text-3xl text-center">Ducati
+                                    Panigale</h2>
+                                <p
+                                    class="text-5xl text-yellow-500 text-center w-40 m-auto glass flex items-center h-full">7399$</p>
+                                <div class="card-actions justify-end">
+                                    <button
+                                        class="btn btn-outline btn-warning">Pre-Order</button>
+                                </div>
                             </div>
-                          </div>
+                        </div>
                     </div>
-                    
+
                     <div id="item3" class="carousel-item w-full">
                         <div class="card w-full glass mt-4">
-                            <figure><img src="./images/slider/bike4.png" alt="car!"/></figure>
+                            <figure><img src="./images/slider/bike4.png"
+                                    alt="car!" /></figure>
                             <div class="card-body">
-                              <h2 class="font-semibold text-orange-600 text-3xl text-center">Ducati Diavel</h2>
-                              <p class="text-5xl text-yellow-500 text-center glass w-40 m-auto">5499$</p>
-                              <div class="card-actions justify-end">
-                                <button class="btn btn-outline btn-warning">Pre-Order</button>
-                              </div>
+                                <h2
+                                    class="font-semibold text-orange-600 text-3xl text-center">Ducati
+                                    Diavel</h2>
+                                <p
+                                    class="text-5xl text-yellow-500 text-center glass w-40 m-auto">5499$</p>
+                                <div class="card-actions justify-end">
+                                    <button
+                                        class="btn btn-outline btn-warning">Pre-Order</button>
+                                </div>
                             </div>
-                          </div>
+                        </div>
                     </div>
-                   
-                   
+
                 </div>
                 <div class="flex justify-center w-full py-2 gap-2">
                     <a href="#item1" class="btn btn-xs">1</a>
@@ -147,7 +174,6 @@
                     <a href="#item3" class="btn btn-xs">3</a>
                 </div>
             </section>
-
 
         </header>
 
@@ -157,236 +183,321 @@
 
             <!-- latest News -->
 
-            <section class="container m-auto mt-20 shadow-lg shadow-cyan-950 pt-4">
-                <h2 class="font-semibold text-3xl  lg:text-5xl text-black text-center mt-8 mb-4">Upcoming <span class="text-orange-500">Bikes</span></h2>
-               <div class="flex flex-col gap-10">
-                <div class="card lg:card-side bg-base-100 shadow-xl lg:p-10 flex lg:flex-row-reverse">
-                    <figure><img src="./images/others/latest2.png" alt="Album"/></figure>
-                    <div class="card-body">
-                      <h2 class="card-title text-cyan-800">New Bike is Realising Soon!</h2>
-                      <p class="text-cyan-800">Click The Social Media Icons to Get Updated.</p>
-                      <div class="flex text-5xl gap-10 cursor-pointer"><i class="fa-brands fa-facebook text-blue-500 hover:text-blue-800 "></i> <i class="fab fa-twitter text-blue-300 hover:text-blue-500"></i>
+            <section
+                class="container m-auto mt-20 shadow-lg shadow-cyan-950 pt-4">
+                <h2
+                    class="font-semibold text-3xl  lg:text-5xl text-black text-center mt-8 mb-4">Upcoming
+                    <span class="text-orange-500">Bikes</span></h2>
+                <div class="flex flex-col gap-10">
+                    <div
+                        class="card lg:card-side bg-base-100 shadow-xl lg:p-10 flex lg:flex-row-reverse">
+                        <figure><img src="./images/others/latest2.png"
+                                alt="Album" /></figure>
+                        <div class="card-body">
+                            <h2 class="card-title text-cyan-800">New Bike is
+                                Realising Soon!</h2>
+                            <p class="text-cyan-800">Click The Social Media
+                                Icons to Get Updated.</p>
+                            <div class="flex text-5xl gap-10 cursor-pointer"><i
+                                    class="fa-brands fa-facebook text-blue-500 hover:text-blue-800 "></i>
+                                <i
+                                    class="fab fa-twitter text-blue-300 hover:text-blue-500"></i>
 
-                        <i class="fab fa-instagram bg-clip-text text-transparent bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 hover:text-blue-500 hover:from-yellow-300 hover:to-yellow-500"></i></div>
+                                <i
+                                    class="fab fa-instagram bg-clip-text text-transparent bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 hover:text-blue-500 hover:from-yellow-300 hover:to-yellow-500"></i></div>
 
-                      <div class="card-actions justify-end">
+                            <div class="card-actions justify-end">
 
-                        <!-- countdown -->
-                        <h2 class="grid grid-flow-col gap-5 text-center auto-cols-max items-center justify-center h-full lg:font-bold lg:text-5xl md:text-4xl text-3xl font-bold text-orange-500">Time Left:</h2>
+                                <!-- countdown -->
+                                <h2
+                                    class="grid grid-flow-col gap-5 text-center auto-cols-max items-center justify-center h-full lg:font-bold lg:text-5xl md:text-4xl text-3xl font-bold text-orange-500">Time
+                                    Left:</h2>
 
-                        <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
-                            <div class="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
-                              <span class="countdown font-mono text-5xl text-orange-500">
-                                <span style="--value:00;"></span>
-                              </span>
-                              Months
-                            </div> 
+                                <div
+                                    class="grid grid-flow-col gap-5 text-center auto-cols-max">
+                                    <div
+                                        class="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
+                                        <span
+                                            class="countdown font-mono text-5xl text-orange-500">
+                                            <span style="--value:00;"></span>
+                                        </span>
+                                        Months
+                                    </div>
 
-                        <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
-                            <div class="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
-                              <span class="countdown font-mono text-5xl text-orange-500">
-                                <span style="--value:16;"></span>
-                              </span>
-                              days
-                            </div> 
-                            <div class="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
-                              <span class="countdown font-mono text-5xl text-orange-500">
-                                <span style="--value:10;"></span>
-                              </span>
-                              hours
-                            </div> 
-                          </div>
-                      </div>
+                                    <div
+                                        class="grid grid-flow-col gap-5 text-center auto-cols-max">
+                                        <div
+                                            class="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
+                                            <span
+                                                class="countdown font-mono text-5xl text-orange-500">
+                                                <span
+                                                    style="--value:16;"></span>
+                                            </span>
+                                            days
+                                        </div>
+                                        <div
+                                            class="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
+                                            <span
+                                                class="countdown font-mono text-5xl text-orange-500">
+                                                <span
+                                                    style="--value:10;"></span>
+                                            </span>
+                                            hours
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-                  </div>
-                  <!-- bike-2 -->
+                    <!-- bike-2 -->
 
-                  <div class="card lg:card-side bg-base-100 shadow-xl lg:p-10 flex lg:flex-row-reverse">
-                    <figure><img src="./images/others/latest1.png" alt="Album"/></figure>
-                    <div class="card-body">
-                      <h2 class="card-title text-cyan-800">New Bike is Realising Soon!</h2>
-                      <p class="text-cyan-800">Click The Social Media Icons to Get Updated.</p>
-                      <div class="flex text-5xl gap-10 cursor-pointer"><i class="fa-brands fa-facebook text-blue-500 hover:text-blue-800 "></i> <i class="fab fa-twitter text-blue-300 hover:text-blue-500"></i>
+                    <div
+                        class="card lg:card-side bg-base-100 shadow-xl lg:p-10 flex lg:flex-row-reverse">
+                        <figure><img src="./images/others/latest1.png"
+                                alt="Album" /></figure>
+                        <div class="card-body">
+                            <h2 class="card-title text-cyan-800">New Bike is
+                                Realising Soon!</h2>
+                            <p class="text-cyan-800">Click The Social Media
+                                Icons to Get Updated.</p>
+                            <div class="flex text-5xl gap-10 cursor-pointer"><i
+                                    class="fa-brands fa-facebook text-blue-500 hover:text-blue-800 "></i>
+                                <i
+                                    class="fab fa-twitter text-blue-300 hover:text-blue-500"></i>
 
-                        <i class="fab fa-instagram bg-clip-text text-transparent bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 hover:text-blue-500 hover:from-yellow-300 hover:to-yellow-500"></i></div>
+                                <i
+                                    class="fab fa-instagram bg-clip-text text-transparent bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 hover:text-blue-500 hover:from-yellow-300 hover:to-yellow-500"></i></div>
 
-                      <div class="card-actions justify-end">
+                            <div class="card-actions justify-end">
 
-                        <!-- countdown -->
-                        <h2 class="grid grid-flow-col gap-5 text-center auto-cols-max items-center justify-center h-full lg:font-bold lg:text-5xl md:text-4xl text-3xl font-bold text-orange-500">Time Left:</h2>
+                                <!-- countdown -->
+                                <h2
+                                    class="grid grid-flow-col gap-5 text-center auto-cols-max items-center justify-center h-full lg:font-bold lg:text-5xl md:text-4xl text-3xl font-bold text-orange-500">Time
+                                    Left:</h2>
 
-                        <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
-                            <div class="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
-                              <span class="countdown font-mono text-5xl text-orange-500">
-                                <span style="--value:01;"></span>
-                              </span>
-                              Months
-                            </div> 
+                                <div
+                                    class="grid grid-flow-col gap-5 text-center auto-cols-max">
+                                    <div
+                                        class="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
+                                        <span
+                                            class="countdown font-mono text-5xl text-orange-500">
+                                            <span style="--value:01;"></span>
+                                        </span>
+                                        Months
+                                    </div>
 
-                        <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
-                            <div class="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
-                              <span class="countdown font-mono text-5xl text-orange-500">
-                                <span style="--value:13;"></span>
-                              </span>
-                              days
-                            </div> 
-                            <div class="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
-                              <span class="countdown font-mono text-5xl text-orange-500">
-                                <span style="--value:16;"></span>
-                              </span>
-                              hours
-                            </div> 
-                          </div>
-                      </div>
+                                    <div
+                                        class="grid grid-flow-col gap-5 text-center auto-cols-max">
+                                        <div
+                                            class="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
+                                            <span
+                                                class="countdown font-mono text-5xl text-orange-500">
+                                                <span
+                                                    style="--value:13;"></span>
+                                            </span>
+                                            days
+                                        </div>
+                                        <div
+                                            class="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
+                                            <span
+                                                class="countdown font-mono text-5xl text-orange-500">
+                                                <span
+                                                    style="--value:16;"></span>
+                                            </span>
+                                            hours
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-                  </div>
-               </div>
+                </div>
 
             </section>
-
 
             <!-- user review -->
 
-            <section class="container m-auto lg:mt-20 mt-10 shadow-lg shadow-orange-900 pt-4">
+            <section
+                class="container m-auto lg:mt-20 mt-10 shadow-lg shadow-orange-900 pt-4">
 
-                <h2 class="font-semibold text-3xl  lg:text-5xl text-black text-center mt-8 mb-4">Happy <span class="text-orange-500">Clients says</span></h2>
+                <h2
+                    class="font-semibold text-3xl  lg:text-5xl text-black text-center mt-8 mb-4">Happy
+                    <span class="text-orange-500">Clients says</span></h2>
 
-                <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5">
+                <div
+                    class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5">
                     <div class="card  shadow-xl">
                         <figure class="px-10 pt-10">
-                          <img src="./images/others/user-1.png " alt="Shoes" class="rounded-md w-1/2" />
+                            <img src="./images/others/user-1.png " alt="Shoes"
+                                class="rounded-md w-1/2" />
                         </figure>
                         <div class="card-body items-center text-center">
-                          <h2 class="card-title">Slate helps you see how 
-                            many more days you need 
-                            to work to reach your financial 
-                            goal for the month and year.</h2>
+                            <h2 class="card-title">Slate helps you see how
+                                many more days you need
+                                to work to reach your financial
+                                goal for the month and year.</h2>
                             <div class="rating">
-                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
-                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                              </div>
-                          <div class="card-actions">
-                            <p class=" text-blue-400 font-bold">Regina Miles</p>
-                          </div>
+                                <input type="radio" name="rating-2"
+                                    class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2"
+                                    class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2"
+                                    class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2"
+                                    class="mask mask-star-2 bg-orange-400"
+                                    checked />
+                                <input type="radio" name="rating-2"
+                                    class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                            <div class="card-actions">
+                                <p class=" text-blue-400 font-bold">Regina
+                                    Miles</p>
+                            </div>
                         </div>
-                      </div>
-                      <!-- user-2 -->
+                    </div>
+                    <!-- user-2 -->
 
-                      <div class="card  shadow-xl">
+                    <div class="card  shadow-xl">
                         <figure class="px-10 pt-10">
-                          <img src="./images/others/user-2.png " alt="Shoes" class="rounded-md w-1/2" />
+                            <img src="./images/others/user-2.png " alt="Shoes"
+                                class="rounded-md w-1/2" />
                         </figure>
                         <div class="card-body items-center text-center">
-                          <h2 class="card-title">Slate helps you see how 
-                            many more days you need 
-                            to work to reach your financial 
-                            goal for the month and year.</h2>
+                            <h2 class="card-title">Slate helps you see how
+                                many more days you need
+                                to work to reach your financial
+                                goal for the month and year.</h2>
                             <div class="rating">
-                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"  />
-                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"checked />
-                              </div>
-                          <div class="card-actions">
-                            <p class=" text-blue-400 font-bold">Regina Miles</p>
-                          </div>
+                                <input type="radio" name="rating-2"
+                                    class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2"
+                                    class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2"
+                                    class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2"
+                                    class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2"
+                                    class="mask mask-star-2 bg-orange-400"
+                                    checked />
+                            </div>
+                            <div class="card-actions">
+                                <p class=" text-blue-400 font-bold">Regina
+                                    Miles</p>
+                            </div>
                         </div>
-                      </div>
+                    </div>
 
-                      <!-- user-3  -->
+                    <!-- user-3  -->
 
-                      <div class="card  shadow-xl">
+                    <div class="card  shadow-xl">
                         <figure class="px-10 pt-10">
-                          <img src="./images/others/user-3.png " alt="Shoes" class="rounded-md w-1/2" />
+                            <img src="./images/others/user-3.png " alt="Shoes"
+                                class="rounded-md w-1/2" />
                         </figure>
                         <div class="card-body items-center text-center">
-                          <h2 class="card-title">Slate helps you see how 
-                            many more days you need 
-                            to work to reach your financial 
-                            goal for the month and year.</h2>
+                            <h2 class="card-title">Slate helps you see how
+                                many more days you need
+                                to work to reach your financial
+                                goal for the month and year.</h2>
                             <div class="rating">
-                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"  checked/>
-                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                              </div>
-                          <div class="card-actions">
-                            <p class=" text-blue-400 font-bold">Regina Miles</p>
-                          </div>
+                                <input type="radio" name="rating-2"
+                                    class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2"
+                                    class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2"
+                                    class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2"
+                                    class="mask mask-star-2 bg-orange-400"
+                                    checked />
+                                <input type="radio" name="rating-2"
+                                    class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                            <div class="card-actions">
+                                <p class=" text-blue-400 font-bold">Regina
+                                    Miles</p>
+                            </div>
                         </div>
-                      </div>
-                      
+                    </div>
+
                 </div>
             </section>
-            
+
             <!-- question -->
 
-            <section class="container m-auto lg:mt-20 mt-10 shadow-lg shadow-cyan-950 pt-4 bg-gradient-to-r from-orange-200 from-20% 
+            <section
+                class="container m-auto lg:mt-20 mt-10 shadow-lg shadow-cyan-950 pt-4 bg-gradient-to-r from-orange-200 from-20% 
             via-emerald-600 via-60%  to-cyan-700 to-90% mb-10 pb-10">
 
-                <h2 class="font-semibold text-3xl  lg:text-5xl text-black text-center mt-8 mb-4">Frequently Asked <span class="text-orange-500">Question?</span></h2>
+                <h2
+                    class="font-semibold text-3xl  lg:text-5xl text-black text-center mt-8 mb-4">Frequently
+                    Asked <span class="text-orange-500">Question?</span></h2>
                 <div class="hero glass w-9/12 m-auto">
                     <div class="hero-content flex-col lg:flex-row">
-                      <img src="./images/others/faq.png" class="lg:max-w-sm " />
-                      <div>
-                        <div class="collapse collapse-plus glass">
-                            <input type="radio" name="my-accordion-3" checked="checked" /> 
-                            <div class="collapse-title text-xl font-medium">
-                                What are the most important things I should
-                                know about riding a bike?
+                        <img src="./images/others/faq.png"
+                            class="lg:max-w-sm " />
+                        <div>
+                            <div class="collapse collapse-plus glass">
+                                <input type="radio" name="my-accordion-3"
+                                    checked="checked" />
+                                <div class="collapse-title text-xl font-medium">
+                                    What are the most important things I should
+                                    know about riding a bike?
+                                </div>
+                                <div class="collapse-content">
+                                    <p>Safety First! Always obey the rules of
+                                        the road. Obey all traffic signals,
+                                        signs, and laws. Get in the mindset of
+                                        “driving” your bike—not just “riding”
+                                        your bike. This will help you be a more
+                                        focused and legally compliant bike
+                                        rider. </p>
+                                </div>
                             </div>
-                            <div class="collapse-content"> 
-                              <p>Safety First! Always obey the rules of the road. Obey all traffic signals, signs, and laws. Get in the mindset of “driving” your bike—not just “riding” your bike. This will help you be a more focused and legally compliant bike rider. </p>
+                            <div class="collapse collapse-plus glass">
+                                <input type="radio" name="my-accordion-3" />
+                                <div class="collapse-title text-xl font-medium">
+                                    How can I tell if my helmet is old and I
+                                    need a
+                                    new one?
+                                </div>
+                                <div class="collapse-content">
+                                    <p>Safety First! Always obey the rules of
+                                        the road. Obey all traffic signals,
+                                        signs, and laws.</p>
+                                </div>
                             </div>
-                          </div>
-                          <div class="collapse collapse-plus glass">
-                            <input type="radio" name="my-accordion-3" /> 
-                            <div class="collapse-title text-xl font-medium">
-                                How can I tell if my helmet is old and I need a 
-                                new one?
+                            <div class="collapse collapse-plus glass">
+                                <input type="radio" name="my-accordion-3" />
+                                <div class="collapse-title text-xl font-medium">
+                                    My bike has been in storage is it safe to
+                                    ride?
+                                </div>
+                                <div class="collapse-content">
+                                    <p>Safety First! Always obey the rules of
+                                        the road. Obey all traffic signals,
+                                        signs, and laws. </p>
+                                </div>
                             </div>
-                            <div class="collapse-content"> 
-                              <p>Safety First! Always obey the rules of the road. Obey all traffic signals, signs, and laws.</p>
-                            </div>
-                          </div>
-                          <div class="collapse collapse-plus glass">
-                            <input type="radio" name="my-accordion-3" /> 
-                            <div class="collapse-title text-xl font-medium">
-                                My bike has been in storage is it safe to ride?
-                            </div>
-                            <div class="collapse-content"> 
-                              <p>Safety First! Always obey the rules of the road. Obey all traffic signals, signs, and laws. </p>
-                            </div>
-                          </div>
-                      </div>
+                        </div>
                     </div>
-                  </div>
-
+                </div>
 
             </section>
-
-
 
         </main>
         <footer class="footer p-10 bg-cyan-950 text-neutral-content">
             <aside>
-              <p class="lg:text-3xl">BULU Industries Ltd.<br/>Providing reliable Bikes since 1992</p>
-            </aside> 
+                <p class="lg:text-3xl">BULU Industries Ltd.<br />Providing
+                    reliable Bikes since 1992</p>
+            </aside>
             <nav>
-              <header class="footer-title text-2xl">Download Now!</header> 
-              <div class="grid grid-flow-col gap-4">
-                <a><img src="./images/others/android.png" alt=""></a>
-                <a><img src="./images/others/ios.png" alt=""></a>
-                
-              </div>
+                <header class="footer-title text-2xl">Download Now!</header>
+                <div class="grid grid-flow-col gap-4">
+                    <a><img src="./images/others/android.png" alt></a>
+                    <a><img src="./images/others/ios.png" alt></a>
+
+                </div>
             </nav>
-          </footer>
+        </footer>
     </body>
 </html>
