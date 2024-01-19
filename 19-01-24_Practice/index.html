@@ -10,59 +10,151 @@
             rel="stylesheet" type="text/css" />
         <script src="https://cdn.tailwindcss.com"></script>
 
+        <!-- google fonts -->
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap"
+            rel="stylesheet">
+
+            <style>
+                .pop{
+
+                    font-family: 'Poppins', sans-serif;
+                }
+            </style>
+
     </head>
-    <body >
+    <body class="pop">
         <header class="bg-cyan-950 w-full">
             <div class="container mx-auto">
 
                 <!-- heading nav  -->
 
                 <div class="navbar">
-                      <div class="dropdown ml-auto">
-                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    <div class="dropdown ml-auto dropdown-end">
+                        <div tabindex="0" role="button"
+                            class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor"><path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" /></svg>
                         </div>
-                        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow rounded-box w-32 mr-10">
-                          <li><a>Home</a></li>
-                          <li> <a>Shop</a></li>
-                          <li><a>News</a></li>
-                          <li><a>Contact</a></li>
-                          <li><div class="flex items-center">
-                            <a class="btn w-full bg-orange-500 text-white">Login</a>
-                          </div>
-                          </li>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow rounded-box w-32 mr-10">
+                            <li><a>Home</a></li>
+                            <li> <a>Shop</a></li>
+                            <li><a>News</a></li>
+                            <li><a>Contact</a></li>
+                            <li><div class="flex items-center">
+                                    <a
+                                        class="btn w-full bg-orange-500 text-white">Login</a>
+                                </div>
+                            </li>
 
                         </ul>
-                    <div class="hidden lg:flex  w-full">
-                      <ul class="menu menu-horizontal px-1">
-                        <li><a>Home</a></li>
-                          <li> <a>Shop</a></li>
-                          <li><a>News</a></li>
-                          <li><a>Contact</a></li>
-                      </ul>
-                      <a class="btn bg-orange-500 text-white ml-12">Login</a>
+                        <div class="hidden lg:flex  w-full">
+                            <ul class="menu menu-horizontal px-1 text-white">
+                                <li><a>Home</a></li>
+                                <li> <a>Shop</a></li>
+                                <li><a>News</a></li>
+                                <li><a>Contact</a></li>
+                            </ul>
+                            <a
+                                class="btn bg-orange-500 text-white ml-12 border-none">Login</a>
+                        </div>
                     </div>
-                  </div>
-                
+
                 </div>
 
                 <!-- heading content -->
 
-                <div class="hero bg-base-200">
+                <div class="hero">
                     <div class="hero-content flex-col lg:flex-row-reverse">
-                      <img src="./images/others/cbr.png" class="lg:max-w-sm md:max-w-xs rounded-lg " />
-                      <div>
-                        <h1 class="lg:text-5xl sm:text-2xl md:text-3xl font-bold text-white">Honda CBR 300R</h1>
-                        <p class="py-6 text-white">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-                        <button class="btn bg-orange-500 text-white">Purchase</button>
-                      </div>
+                        <img src="./images/others/cbr.png"
+                            class="lg:max-w-sm md:max-w-xs rounded-lg " />
+                        <div>
+                            <h1
+                                class="lg:text-5xl sm:text-2xl md:text-3xl font-bold text-white">Honda
+                                CBR 300R</h1>
+                            <p class="py-6 text-white">Amet minim mollit non
+                                deserunt ullamco est sit aliqua dolor do amet
+                                sint. Velit officia consequat duis enim velit
+                                mollit. Exercitation veniam consequat sunt
+                                nostrud amet.</p>
+                            <button
+                                class="btn bg-orange-500 text-white border-none">Purchase</button>
+                        </div>
                     </div>
-                  </div>
+                </div>
 
             </div>
+
+            <!-- shop section  -->
+
+
+            <section class="container m-auto">
+                <h2 class="font-semibold text-3xl  lg:text-5xl text-orange-500 text-center mt-4">Fetured Bikes In This Year</h2>
+                <p class="text-center text-orange-200 font-light text-2xl">Best bike collection</p>
+                <div class="carousel w-full">
+                    <div id="item1" class="carousel-item w-full">
+                        <div class="card w-full glass mt-4">
+                            <figure><img src="./images/slider/bike2.png" alt="car!"/></figure>
+                            <div class="card-body">
+                              <h2 class="font-semibold text-orange-600 text-3xl text-center">Ducati Scramble</h2>
+                              <p class="text-5xl text-yellow-500 text-center glass w-40 m-auto ">2999$</p>
+                              <div class="card-actions justify-end">
+                                <button class="btn btn-outline btn-warning">Pre-Order</button>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                    <div id="item2" class="carousel-item w-full">
+                        <div class="card w-full glass mt-4">
+                            <figure><img src="./images/slider/bike3.png" alt="car!"/></figure>
+                            <div class="card-body">
+                              <h2 class="font-semibold text-orange-400 text-3xl text-center">Ducati Panigale</h2>
+                              <p class="text-5xl text-yellow-500 text-center w-40 m-auto glass flex items-center h-full">7399$</p>
+                              <div class="card-actions justify-end">
+                                <button class="btn btn-outline btn-warning">Pre-Order</button>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                    
+                    <div id="item3" class="carousel-item w-full">
+                        <div class="card w-full glass mt-4">
+                            <figure><img src="./images/slider/bike4.png" alt="car!"/></figure>
+                            <div class="card-body">
+                              <h2 class="font-semibold text-orange-600 text-3xl text-center">Ducati Diavel</h2>
+                              <p class="text-5xl text-yellow-500 text-center glass w-40 m-auto">5499$</p>
+                              <div class="card-actions justify-end">
+                                <button class="btn btn-outline btn-warning">Pre-Order</button>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                   
+                   
+                </div>
+                <div class="flex justify-center w-full py-2 gap-2">
+                    <a href="#item1" class="btn btn-xs">1</a>
+                    <a href="#item2" class="btn btn-xs">2</a>
+                    <a href="#item3" class="btn btn-xs">3</a>
+                </div>
+            </section>
+
+
         </header>
 
+        <!-- main section  -->
+
         <main>
+
+            
 
         </main>
         <footer>
