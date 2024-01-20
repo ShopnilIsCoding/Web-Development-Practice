@@ -13,26 +13,15 @@
 
 <!-- hero-content -->
 
-<div
-    class="diff aspect-[16/9] w-[95%] m-auto rounded-lg"
-    x-data="{ dragging: false }"
-    x-on:touchstart="dragging = true"
-    x-on:touchend="dragging = false"
->
-    <div
-        class="diff-item-1"
-        x-bind:class="{ 'cursor-grabbing': dragging }"
-    >
-        <img alt="daisy" src="./1705757183515.jpeg" />
+<div class="diff aspect-[16/9]">
+    <div class="diff-item-1">
+      <img alt="daisy" src="https://daisyui.com/images/stock/photo-1560717789-0ac7c58ac90a.jpg" />
     </div>
-    <div
-        class="diff-item-2"
-        x-bind:class="{ 'cursor-grabbing': dragging }"
-    >
-        <img alt="daisy" src="./1705757183524.jpg" />
+    <div class="diff-item-2">
+      <img alt="daisy" src="https://daisyui.com/images/stock/photo-1560717789-0ac7c58ac90a-bw.jpg" />
     </div>
     <div class="diff-resizer"></div>
-</div>
+  </div>
 
 
 
