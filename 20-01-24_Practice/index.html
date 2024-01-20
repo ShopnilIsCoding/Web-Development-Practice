@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Happy birthday</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <canvas id="c"></canvas>
+    <p>
+      <a href="">created</a><span> by <a href="">Shopnil</a></span>
+    </p>
+
+    <!-- Button to lead to another HTML file -->
+    <button id="goToAnotherPage" class="text-white bg-red-500 bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 btn btn-outline btn-secondary ">&#128139;Click Me &#128139;</button>
+
+    <script src="script.js"></script>
+
+    <script>
+      // Add this code to handle button click
+      document.getElementById('goToAnotherPage').addEventListener('click', function() {
+          // Replace 'path/to/your/another/file.html' with the actual path to your other HTML file
+          window.location.href = './wish.html';
+      });
+    </script>
+  </body>
+</html>
