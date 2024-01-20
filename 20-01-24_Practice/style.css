@@ -4,12 +4,11 @@ canvas {
 	left: 0;
 }
 p {
-	margin: 0 0;
 	position: absolute;
 	font: 16px Verdana;
 	color: #eee;
 	height: 25px;
-	top: calc( 100vh - 100px );
+	top: calc( 90vh - 100px );
 	text-shadow: 0 0 2px white;
 }
 p a {
@@ -23,9 +22,8 @@ p > a:first-of-type {
 	font-size: 20px;
 }
 body {
-	overflow: hidden;
+	overflow: hidden; 
 }
-/* Add this style for the button */
 button {
     position: relative;
     top: 85vh;
