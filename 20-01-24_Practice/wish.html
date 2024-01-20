@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Happy Birthday</title>
     <link rel="stylesheet" href="style2.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
@@ -13,15 +13,26 @@
 
 <!-- hero-content -->
 
-<div class="diff aspect-[16/9]">
-    <div class="diff-item-1">
-      <img alt="daisy" src="https://daisyui.com/images/stock/photo-1560717789-0ac7c58ac90a.jpg" />
+<div
+    class="diff aspect-[16/9] w-[95%] m-auto rounded-lg"
+    x-data="{ dragging: false }"
+    x-on:touchstart="dragging = true"
+    x-on:touchend="dragging = false"
+>
+    <div
+        class="diff-item-1"
+        x-bind:class="{ 'cursor-grabbing': dragging }"
+    >
+        <img alt="daisy" src="./1705757183515.jpeg" />
     </div>
-    <div class="diff-item-2">
-      <img alt="daisy" src="https://daisyui.com/images/stock/photo-1560717789-0ac7c58ac90a-bw.jpg" />
+    <div
+        class="diff-item-2"
+        x-bind:class="{ 'cursor-grabbing': dragging }"
+    >
+        <img alt="daisy" src="./1705757183524.jpg" />
     </div>
     <div class="diff-resizer"></div>
-  </div>
+</div>
 
 
 
