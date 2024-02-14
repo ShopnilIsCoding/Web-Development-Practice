@@ -13,6 +13,7 @@ document.getElementById("Post").addEventListener('click', function () {
     const textbox = document.getElementById('text');
     const p = document.createElement('p');
     p.innerHTML = comment;
+    p.classList.add('pr');
     
     
     textbox.appendChild(p);
