@@ -14,7 +14,7 @@
         </div>
         <div style="text-align: center;">
             <h1>Please add your comment Below</h1>
-        <form action="">
+        <form>
             <textarea id="comment" class="comment" required placeholder="Type Your Comment Here"></textarea> <br>
         <br>
         <input type="text" name="" id="name" placeholder="Your Name Here" required>
@@ -28,10 +28,13 @@
        <section>
 
         
-        <form action="">
-            Enter Customer Id To Delete: 
-            <input type="text" name="" id="id" style="width: 25px;">
+        <form id="myForm" style="text-align: center; text-wrap: wrap;">
+            <span style="font-size: x-large;">Enter Customer Id To <span style="color: red;">Delete</span> Comment: </span>
+            <!-- <input type="text" name="" id="id" style="width: 25px;"> -->
+            <input type="number" id="id" style="width: 50px;">
             <button class="btn" id="delete">Delete</button>
+            
+            
         </form>
        </section>
 
