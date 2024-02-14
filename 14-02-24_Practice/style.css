@@ -1,0 +1,31 @@
+#Post
+{
+    width: 80px; 
+    border: 2px solid blueviolet;
+}
+.text
+{
+
+    height: 200px;
+    overflow-y: scroll;
+    width: 90%;
+    border: 2px solid blueviolet;
+    margin: 10px auto;
+    padding: 5px;
+    font-size: large;
+
+}
+.comment
+{
+    resize: none;
+    min-height: 100px;
+    width: 60%;
+    margin: 0 auto;
+    font-size: x-large;
+    color: blueviolet;
+
+}
+#name
+{
+    color: tomato;
+}
