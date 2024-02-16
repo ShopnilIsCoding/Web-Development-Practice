@@ -1,12 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculate BMI</title>
-</head>
-<body>
-    <title>Body Mass Index Calculator</title> 
-    
-</body> 
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculate BMI</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
+            rel="stylesheet" type="text/css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="./index.css">
+
+    </head>
+    <body class="h-screen pt-2 lg:pt-5"
+        style="background-image: url('./pawel-czerwinski-mineSpp-Wco-unsplash.jpg'); background-repeat: no-repeat; background-size: cover;background-position: center; object-fit: cover;">
+        <h1
+            class="text-violet-300 text-center font-bold lg:text-3xl max-w-fit rounded-md p-2  mx-auto">Body
+            Mass Index Calculator</h1>
+
+        <!-- input section  -->
+        <section>
+            <div
+                class="w-[90%] lg:w-[40%]  mx-auto  rounded-lg p-6 lg:p-14 flex flex-col gap-2 lg:gap-5"
+                style="background-image: url('./jose-fontano-TdPQp3fjzOw-unsplash.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+                <!-- name  -->
+                <input type="text" placeholder="Your Name" id="name"
+                    class="input input-bordered input-secondary w-full "
+                    required />
+                <!-- kg  -->
+                <input type="text" placeholder="Your Weight In KG" id="kg"
+                    class="input input-bordered input-accent w-full  mx-auto"
+                    required />
+
+                <div class="w-full flex flex-col lg:flex-row gap-2 lg:gap-5">
+                    <!-- Feet -->
+                    <input type="text" placeholder="Feet"
+                        id="feet"
+                        class="input input-bordered input-error w-full "
+                        required />
+                    <!-- Inches -->
+                    <input type="text" placeholder="Inches" id="inches"
+                        class="input input-bordered input-warning w-full "
+                        required />
+                </div>
+                <button
+                    class="btn btn-active btn-accent text-2xl"
+                    id="btn">Calculate</button>
+
+            </div>
+        </section>
+
+        <!-- result section  -->
+
+        <section>
+            <div class="divider divider-accent text-cyan-300 font-semibold">Your
+                Result</div>
+
+            <div
+                class="w-[90%] lg:w-[40%]  mx-auto border-2 rounded-lg p-6 lg:p-14 flex flex-col gap-2 lg:gap-5 border-violet-500"
+                id="result">
+                <p class="text-cyan-300"><span id="span"></span></p>
+                <div class="radial-progress text-cyan-400 mx-auto" style=" --size:12rem; --thickness: 2rem;" role="progressbar" id="radial">0%</div>
+
+                <progress class="progress progress-accent w-full" value="10"
+                    max="40" id="progress"></progress>
+            </div>
+
+        </section>
+        <script src="./index.js"></script>
+    </body>
 </html>
