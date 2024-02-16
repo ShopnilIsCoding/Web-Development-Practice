@@ -42,11 +42,12 @@ document.getElementById('btn').addEventListener('click', function() {
     p.style.fontWeight='700';
     p.style.textAlign='center';
     p.innerText=name+' Your BMI is :'+bmi;
+    p.style.color='black'
     if(bmi>=18.50 && bmi<=25.00)
     {
         p.innerText=name+' তুমি তো মিয়া রিত্তিক রোসান,অডিশন কবে? ';
         radial.style.color='lightgreen'
-        p.style.color='lightgreen'
+        
         cover.setAttribute('style',`background-image: url('./hrithik-roshan-oq74orkp625wlwu2.jpg'); background-repeat: no-repeat; background-size: cover;background-position: center; object-fit: cover;`)
        
     }
@@ -54,7 +55,7 @@ document.getElementById('btn').addEventListener('click', function() {
     {
         p.innerText=name+'কি অবস্থা ব্রো? তোমার তো ভুড়ি দেখা যায়';
         radial.style.color='goldenrod'
-        p.style.color='cyan'
+       
         cover.setAttribute('style',`background-image: url('./overweight.jpg'); background-repeat: no-repeat; background-size: cover;background-position: center; object-fit: cover;`)
         
     }
@@ -62,7 +63,7 @@ document.getElementById('btn').addEventListener('click', function() {
     {
         p.innerText=name+'তোমার পেট থেকে তো কিছুদিন পর নতুন শিশু জন্ম নিবে ব্রো';
         radial.style.color='orange'
-        p.style.color='cyan'
+        
         cover.setAttribute('style',`background-image: url('./obesity-1.jpg'); background-repeat: no-repeat; background-size: cover;background-position: center; object-fit: cover;`)
        
     }
@@ -70,7 +71,7 @@ document.getElementById('btn').addEventListener('click', function() {
     {
         p.innerText=name+'তোমার বোধ হয় আর রক্ষে নেই';
         radial.style.color='pink'
-        p.style.color='cyan'
+        
         cover.setAttribute('style',`background-image: url('./obesity-2.jpg'); background-repeat: no-repeat; background-size: cover;background-position: center; object-fit: cover;`)
         
     }
@@ -78,7 +79,7 @@ document.getElementById('btn').addEventListener('click', function() {
     {
         p.innerText=name+'আরেহ! তুমি বেচে আছ কিভাবে?';
         radial.style.color='red'
-        p.style.color='cyan'
+        
         cover.setAttribute('style',`background-image: url('./dead.jpg'); background-repeat: no-repeat; background-size: cover;background-position: center; object-fit: cover;`)
         
     }
@@ -86,7 +87,7 @@ document.getElementById('btn').addEventListener('click', function() {
     {
         p.innerText=name+'ঝড় ,তুফান উঠলে নিজেকে সামলে রেখ উড়ে যেতে পার';
         radial.style.color='blueviolet'
-        p.style.color='cyan'
+       
         cover.setAttribute('style',`background-image: url('./ronaldo.jpg'); background-repeat: no-repeat; background-size: cover;background-position: center; object-fit: cover;`)
         
         
