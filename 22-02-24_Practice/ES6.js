@@ -14,7 +14,10 @@ const add=(a,b=50)=>a+b;
 console.log(add(50));
 
 
-//Practice-2
+//Practice-2what will be the output?
+
+function min(nums) { return Math.min(nums) }
+console.log(min( [1,3,2 ]));
 const array=(array)=>{
     let a=[];
     for (const iterator of array) {
@@ -65,3 +68,7 @@ const merge=(array1,array2)=>{
 // const merge = (array1, array2) => Math.max(...array1, ...array2); //same in one-line
 
 console.log(merge([1,2,3,4,32,23,54],[32,54,21,76,21,43,5]));
+
+const friends = ["Moushumi", "Misha", "Manna", "mimi" , "mahiya"];
+
+friends.find(friend => friend.length ==5);
