@@ -1,0 +1,102 @@
+//dot notation and bracket notation
+// console.log(user.address.street?.second) this ? check if there any street property or not
+const instructor =
+[
+    {name:'Nodi',age:20,position:'Senior'},
+    {name:'Akil',age:15,position:'Junior'},
+    {name:'Shobuj',age:22,position:'Senior'}
+]
+
+const filter=instructor.filter(element=>element.position==='Senior');
+console.log(filter);
+
+const ages=instructor.reduce((ages,age)=>ages+age.age,0);
+console.log(ages);
+
+
+
+// task -1: console log the secondary school location of Sophia 
+let data = {
+    Sophia: {
+        id: 33,
+        study: [
+            {
+                primary:
+                    [
+                        { school_name: "ABC primary school" },
+                        { location: "Peters burg" }
+                    ]
+            },
+            {
+                secondary:
+                    [
+                        { school_name: "ABC secondary school" },
+                        { location: "St Lorence" }
+                    ]
+            },
+        ]
+    }
+};
+
+const task1=data.Sophia.study[1].secondary[1].location;
+console.log(task1);
+
+// task-2: console .log  output: Petersburg, Herry
+
+let students = {
+    2222: {
+        name: "Jack",
+        section: "C",
+        class: "IX",
+        address: {
+            "building no": 12,
+            "street": "St. Jonson",
+            "city": "Petersburg",
+            "country": "UK"
+        }
+    },
+    3333: {
+        name: "Herry",
+        section: "D",
+        class: "X",
+        address: {
+            "building no": 85,
+            "street": "DC road",
+            "city": "Kachukhet",
+            "country": "Bangladesh"
+        }
+    }
+};
+const task2=students["2222"].address['city'];
+const task2_2=students['3333'].name;
+console.log(task2,task2_2);
+
+
+// task-3 : access and then show habluder adda
+// show output Beginner
+let data2 = {
+    data:
+        [
+            {
+                bookId: 1,
+                bookDetails: {
+                    name: "habluder adda",
+                    category: "XYZ",
+                    price: "20$",
+                },
+                bookCategory: "Basic",
+            },
+            {
+                bookId: 2,
+                bookDetails: {
+                    name: "gobluder adda",
+                    category: "ABC",
+                    price: "40$",
+                },
+                bookCategory: "Beginner",
+            }
+        ]
+};
+const task3=data2.data[0].bookDetails.name;
+const task3_2=data2.data[1].bookCategory;
+console.log(task3,task3_2);
