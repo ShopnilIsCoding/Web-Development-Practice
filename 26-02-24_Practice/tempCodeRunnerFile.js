@@ -1,1 +1,1 @@
-const topic=
+,'abc'
