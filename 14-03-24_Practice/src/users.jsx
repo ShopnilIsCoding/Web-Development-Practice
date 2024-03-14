@@ -17,7 +17,7 @@ export default function Users()
         <h1>Users :{user.length}</h1>
         
             {user.map((person,index)=>
-            {
+            { 
                 return <Person key={index} person={person}></Person>
             })}
         
