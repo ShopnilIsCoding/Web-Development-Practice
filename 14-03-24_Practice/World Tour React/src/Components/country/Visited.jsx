@@ -1,4 +1,5 @@
 import './Visited.css';
+import PropTypes from 'prop-types'
 const Visited = ({Name,img}) => {
     return (
       <div className='float'>
@@ -8,4 +9,9 @@ const Visited = ({Name,img}) => {
     );
   };
 
+  Visited.propTypes=
+  {
+    Name: PropTypes.string.isRequired,
+    img: PropTypes.string.isRequired
+  }
 export default Visited;

@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import './Country.css'
+import PropTypes from 'prop-types';
 const Country = ({country,another}) => {
    // console.log(country);
     //let isvisited = false;
@@ -35,4 +36,10 @@ const Country = ({country,another}) => {
     );
 };
 
+
+Country.propTypes=
+{
+    country:PropTypes.object.isRequired,
+    another:PropTypes.func.isRequired
+}
 export default Country;
