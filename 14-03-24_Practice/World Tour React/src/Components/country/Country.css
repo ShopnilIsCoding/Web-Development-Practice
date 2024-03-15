@@ -1,0 +1,22 @@
+.countryContainer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+.country 
+{
+    border: 2px solid blueviolet;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+@media  screen and ( max-width:768px) {
+    .countryContainer{
+        width: 97%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 10px;
+    }
+    
+}

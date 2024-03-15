@@ -1,0 +1,15 @@
+.visited
+{
+    border: 1px solid rgb(198, 255, 172);
+    padding: 5px;
+    border-radius: 5px;
+}
+.float {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    color: black;
+    font-weight: 600;
+  }
+  
+

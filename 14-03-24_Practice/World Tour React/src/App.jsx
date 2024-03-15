@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       
-      <h1>World Tour</h1>
+      <h1 style={{textAlign:'center'}}>World Tour</h1>
       <Countries></Countries>
     </>
   )

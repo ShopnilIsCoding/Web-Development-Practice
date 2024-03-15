@@ -1,0 +1,21 @@
+.floating {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: rgba(255, 255, 255, 0.451); 
+    max-height: 30vh;
+    overflow: scroll;
+    color: black;
+    text-align: center;
+    border-top: 1px;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  .flex
+  {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
