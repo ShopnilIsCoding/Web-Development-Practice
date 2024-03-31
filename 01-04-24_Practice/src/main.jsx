@@ -5,14 +5,19 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-
-import SignIn from '../public/Pages/SignIn.jsx';
-
+import Layout from '../Layout/Layout';
+import SignIn from '../components/SignIn';
 const router = createBrowserRouter([
   {
     path: "/",
-    element:
-    
+    element: <Layout></Layout>,
+    children:[
+      {
+        path:'/signin',
+        element:<SignIn></SignIn>
+        
+      }
+    ]
   },
 ]);
 
