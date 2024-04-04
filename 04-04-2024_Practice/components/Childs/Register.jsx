@@ -3,6 +3,7 @@ import auth from "../../src/firebase.config";
 import { useState } from "react";
 import { IoEye } from "react-icons/io5";
 import { IoIosEyeOff } from "react-icons/io";
+import { toast } from "react-toastify";
 
 const Register = (e) => {
 
@@ -19,17 +20,24 @@ const Register = (e) => {
         e.preventDefault();
         const email=e.target.email.value;
         const password=e.target.password.value;
+        const accepted=e.target.check.checked;
         console.log('submitted', email,password);
         if(length<6)
         {
+            toast.warning('Password must be at least 6 characters');
+            return;
+        }
+        if(!accepted)
+        {
+            toast.error("Please accept the terms and conditions");
             return;
         }
         createUserWithEmailAndPassword(auth,email,password)
         .then((res) =>{
-            console.log('user created', res.user);
+            toast.success("Successfully Registered");
         })
         .catch((err) =>{
-            console.error('error', err);
+            toast.error(err.message);
         })
     };
     return (
@@ -57,18 +65,26 @@ const Register = (e) => {
           
           <span className="absolute text-xl  right-1 top-[50%] -translate-y-[50%] cursor-pointer" onClick={()=>{setVisible(!visible)}}>{visible? <IoIosEyeOff /> : <IoEye />}</span>
           </div>
-          {
-            length<6 &&length>0 && <p className="flex justify-end text-sm  "><span className="text-red-600"> Weak</span></p>
-          }
-          {
-            length>=6 &&  length<8 && <p className="flex justify-end text-sm "> <span className="text-yellow-500"> Good</span></p>
-          }
-          {
-            length>=8 && <p className="flex justify-end text-sm  "> <span className="text-green-500"> Strong</span></p>
-          }
-          <label className="label">
+          
+          <div className="flex items-center justify-between w-full">
+          <label className="label flex-1">
             <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
           </label>
+          {
+            length<6 &&length>0 && <p className=" text-sm  text-end"><span className="text-red-600"> Weak</span></p>
+          }
+          {
+            length>=6 &&  length<8 && <p className=" text-sm text-end"> <span className="text-yellow-500"> Good</span></p>
+          }
+          {
+            length>=8 && <p className=" text-sm  text-end"> <span className="text-green-500"> Strong</span></p>
+          }
+          
+          </div>
+          <div>
+            <input className="mr-1" type="checkbox" name="check" id="check" />
+            <label htmlFor="check">Accept Our Terms & Conditions</label>
+          </div>
         </div>
         <div className="form-control mt-6">
           <button type="submit" className="btn btn-primary">Register</button>
