@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const AddCoffe = () => {
 
     const handleAdd=(e)=>
@@ -24,7 +26,8 @@ const AddCoffe = () => {
 
     }
     return (
-        <div className="w-screen h-screen flex items-center justify-center">
+        <div className="w-screen h-screen flex items-center gap-10 justify-center">
+            <Link to={'/'} className="btn">Home</Link>
             <form className="flex flex-col justify-center items-center gap-3" onSubmit={handleAdd}>
                 <input className="p-2" placeholder="name" type="text" name="name" required />
                 <input className="p-2" placeholder="price" type="text" name="price" required />
