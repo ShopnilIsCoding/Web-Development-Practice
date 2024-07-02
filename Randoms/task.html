@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .container {
+            background-color: #fff;
+            width: 800px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .header h1 {
+            font-size: 48px;
+            letter-spacing: 10px;
+            margin: 0;
+        }
+        .header h2 {
+            font-size: 24px;
+            margin: 0;
+            color: #666;
+        }
+        .content {
+            display: flex;
+            justify-content: space-between;
+        }
+        .left-column, .right-column {
+            width: 45%;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .section h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #000;
+            padding-bottom: 5px;
+        }
+        a {
+            display: block;
+            margin-bottom: 5px;
+            color: #42b6ff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .contact a {
+            display: flex;
+            align-items: center;
+        }
+        .contact a i {
+            margin-right: 10px;
+        }
+        .skills, .education, .about, .work-experience {
+            list-style-type: none;
+            padding: 0;
+        }
+        .skills li, .work-experience li {
+            margin-bottom: 5px;
+        }
+        .skills li {
+            background-color: #f0f0f0;
+            padding: 5px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Rahomotul Islam</h1>
+            <h2>Jr. Web Developer</h2>
+        </div>
+        <div class="content">
+            <div class="left-column">
+                <div class="section contact">
+                    <h3>Contact</h3>
+                    <a href="mailto:shopnilkhan766@gmail.com"><i class="fas fa-envelope"></i> shopnilkhan766@gmail.com</a>
+                    <a href="https://github.com/shopniliscoding" target="_blank"><i class="fab fa-github"></i> shopniliscoding</a>
+                    <a href="https://www.linkedin.com/in/rahomotulislam" target="_blank"><i class="fab fa-linkedin"></i> Rahomotul Islam</a>
+                </div>
+                <div class="section skills">
+                    <h3>Skills</h3>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>TailwindCSS</li>
+                        <li>JavaScript</li>
+                        <li>React</li>
+                        <li>Firebase</li>
+                        <li>NodeJS</li>
+                        <li>ExpressJS</li>
+                        <li>MongoDB</li>
+                    </ul>
+                </div>
+                <div class="section education">
+                    <h3>Education</h3>
+                    <p><strong>B.Sc in Computer Science & Engineering</strong></p>
+                    <p>Bangladesh University of Business & Technology</p>
+                    <p>2022-Current</p>
+                </div>
+            </div>
+            <div class="right-column">
+                <div class="section about">
+                    <h3>About</h3>
+                    <p>I am looking for Jr. web developer position based on my skills to improve my learning capabilities & continuously make myself up to the mark for real life professional projects.</p>
+                </div>
+                <div class="section work-experience">
+                    <h3>Featured Project</h3>
+                    <p><strong><a href="https://jobnestbd.web.app/">JobNest</a></strong></p>
+                    <p>Full Stack | 5 Days</p>
+                    <p>JOBNEST is a user-friendly job-seeking website where users can post listings, search for positions, and apply effortlessly.</p>
+                    <ul>
+                        <li>Visually Appealing Design: Focused on color contrast, proper alignment, and customizing component styling for a unique look.</li>
+                        <li>Responsive Design: Made the website accessible on all devices - mobile, tablet, and desktop.</li>
+                        <li>JWT Implementation: Secured certain routes with JSON Web Token (JWT) authentication to ensure user access control.</li>
+                        <li>CRUD Operations: Enable users to add, update, and delete job listings, with appropriate notifications for each action.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
