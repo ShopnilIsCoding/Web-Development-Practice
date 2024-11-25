@@ -6,7 +6,7 @@ var w = c.width = window.innerWidth,
     hh = h / 2,
 
     opts = {
-        strings: ['HAPPY', 'BIRTHDAY!', 'Riyad'],
+        strings: ['HAPPY', 'BIRTHDAY!', 'APU'],
         charSize: 75,
         charSpacing: 88,
         lineHeight: 100,

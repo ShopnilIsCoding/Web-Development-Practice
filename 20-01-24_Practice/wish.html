@@ -9,29 +9,22 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
 </head>
-<body class="bg-[#112D4E]">
+<body class="bg-[#112D4E] flex flex-col">
 
 <!-- hero-content -->
 
 <div
-    class="diff aspect-[16/9] w-[95%] m-auto rounded-lg"
+    class=" aspect-[16/9] w-[95%] m-auto rounded-3xl pt-3 mx-auto flex justify-center items-center"
     x-data="{ dragging: false }"
     x-on:touchstart="dragging = true"
     x-on:touchend="dragging = false"
 >
     <div
-        class="diff-item-1"
+        
         x-bind:class="{ 'cursor-grabbing': dragging }"
     >
-        <img alt="daisy" src="./1705757183515.jpeg" />
+        <img alt="daisy" src="./WhatsApp Image 2024-11-24 at 18.39.07_13fd57a4.jpg" />
     </div>
-    <div
-        class="diff-item-2"
-        x-bind:class="{ 'cursor-grabbing': dragging }"
-    >
-        <img alt="daisy" src="./1705757183524.jpg" />
-    </div>
-    <div class="diff-resizer"></div>
 </div>
 
 
@@ -41,14 +34,15 @@
 
 
 
-  <div class="carousel w-full bg-[#112D4E] pt-5">
+  <div class="carousel w-full bg-[#112D4E] pt-5 flex min-h-fit overflow-hidden">
     <div id="slide1" class="carousel-item relative w-full">
         <div class="card w-[95%] lg:w-1/2 m-auto shadow-xl">
-            <div class="card-body glass">
-              <h2 class="card-title text-[#00ADB5]">Happy Birthday Bro:</h2>
-              <p class="text-[#DBE2EF]">Wishing you a day filled with joy, laughter, and all the happiness in the world. Happy Birthday, my dear friend! May this year bring you everything you've been dreaming of.</p>
+            <div class="card-body glass h-full ">
+              <h2 class="card-title text-[#00ADB5]">Happy Birthday Sis:</h2>
+              <p class="text-[#DBE2EF]">
+                Wishing the most amazing sister a day filled with love, laughter, and endless joy. You’ve always been my guide, my inspiration, and my biggest supporter. May this year bring you success, happiness, and all your heart desires. Love you to the moon and back! ❤️🎉</p>
             </div>
-            <figure><img src="./1705756667834.jpg" alt="Shoes" /></figure>
+            <figure><img src="./WhatsApp Image 2024-11-24 at 18.34.08_618d5a31(1).jpg" alt="Shoes" /></figure>
           </div>
       <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-3/4">
         <a href="#slide4" class="btn btn-circle animate-bounce bg-[#112D4E] text-[#00ADB5] border-none">❮</a> 
@@ -58,10 +52,10 @@
     <div id="slide2" class="carousel-item relative w-full">
         <div class="card lg:w-1/2 w-[95%] m-auto shadow-xl">
             <div class="card-body glass">
-              <h2 class="card-title text-[#00ADB5]">11 Years and Counting: A Friendship Journey:</h2>
-              <p class="text-[#EEEEEE]">Cheers to over a decade of laughter, adventures, and countless memories. Our friendship has stood the test of time, and I'm grateful for every moment we've shared. Here's to many more years of camaraderie and mutual support.</p>
+              <h2 class="card-title text-[#00ADB5]">Happy Birthday to my amazing sister!</h2>
+              <p class="text-[#EEEEEE]">You’ve cared for me like a second mom from childhood till now, always loving, guiding, and supporting me unconditionally. I’m so blessed to have you in my life. Wishing you endless happiness and love on your special day. Love you always! ❤️🎉</p>
             </div>
-            <figure><img src="./1705756667844.jpg" alt="Shoes" /></figure>
+            <figure><img src="./WhatsApp Image 2024-11-24 at 18.33.15_ad002646(1).jpg" alt="Shoes" /></figure>
           </div>
       <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-3/4">
         <a href="#slide1" class="btn btn-circle animate-bounce bg-[#112D4E] text-[#00ADB5] border-none">❮</a> 
@@ -71,12 +65,13 @@
     <div id="slide3" class="carousel-item relative w-full">
         <div class="card lg:w-1/2 w-[95%] m-auto shadow-xl">
             <div class="card-body glass">
-              <h2 class="card-title text-[#00ADB5]">Wishing You a Bright Future: Thank You for Being with Me:</h2>
-              <p class="text-[#EEEEEE]">As you embark on another year of your life journey, I want to wish you success, fulfillment, and endless possibilities. Thank you for being an incredible friend and companion. Here's to your future, filled with achievements and happiness.
-                <span class="text-red-400">-ভাই এগুলা চ্যাট জিপিটি লিখছে সেন্টি খাওয়ার কিছু নাই</span>
+              <h2 class="card-title text-[#00ADB5]">Wishing You a Bright Future: Thank You for Always Caring for Me:</h2>
+              <p class="text-[#EEEEEE]">As you celebrate another year, I want to thank you for being my constant support, guide, and second mom. You’ve always been there for me, and I’m forever grateful. May your future be as wonderful as your heart, filled with love, success, and endless happiness.
+
+                <span class="text-red-400">--এইটা চ্যাটজিপিটি লিখছে, কিন্তু আবেগটা আসল! ❤️</span>
               </p>
             </div>
-            <figure><img src="./1705756667854.jpg" alt="Shoes" /></figure>
+            <figure><img src="./465642869_2379175189093377_4339693577369764295_n.jpg" alt="Shoes" /></figure>
           </div>
       <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-3/4">
         <a href="#slide2" class="btn btn-circle animate-bounce bg-[#112D4E] text-[#00ADB5] border-none">❮</a> 
