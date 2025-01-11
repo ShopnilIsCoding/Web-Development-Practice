@@ -36,14 +36,33 @@ bookingRouter.post('/create-booking',appMiddleware,(req:Request,res:Response)=>
     })
 })
 
-app.get('/', appMiddleware, (req:Request, res:Response) => {
-  res.send('Hello World!')
+app.get('/', appMiddleware, (req:Request, res:Response,next:NextFunction) => {
+  try {
+    res.send(something)
+    
+  } catch (error) {
+    next(error);
+    
+  }
 })
 
 app.post('/',(req:Request,res:Response)=>
 {
     console.log(req.body);
     res.json({message:'Hello World from POST request!'})
+})
+
+app.all('*',(req:Request,res:Response)=>
+{
+    res.status(404).json({success:false,
+        message:'api not found!'})
+})
+
+app.use((error:any,req:Request, res:Response,next:NextFunction) => {
+    if(error){
+    console.log(error);
+    res.status(400).json({success:false,
+        message:'Something broke!'});}
 })
 
 export default app;

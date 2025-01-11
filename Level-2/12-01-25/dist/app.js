@@ -31,11 +31,27 @@ bookingRouter.post('/create-booking', appMiddleware, (req, res) => {
         booking
     });
 });
-app.get('/', appMiddleware, (req, res) => {
-    res.send('Hello World!');
+app.get('/', appMiddleware, (req, res, next) => {
+    try {
+        res.send(something);
+    }
+    catch (error) {
+        next(error);
+    }
 });
 app.post('/', (req, res) => {
     console.log(req.body);
     res.json({ message: 'Hello World from POST request!' });
+});
+app.all('*', (req, res) => {
+    res.status(404).json({ success: false,
+        message: 'api not found!' });
+});
+app.use((error, req, res, next) => {
+    if (error) {
+        console.log(error);
+        res.status(400).json({ success: false,
+            message: 'Something broke!' });
+    }
 });
 exports.default = app;
