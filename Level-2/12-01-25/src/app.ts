@@ -11,6 +11,31 @@ const appMiddleware = (req:Request, res:Response, next:NextFunction) =>
     next();
 }
 
+//router
+
+const userRouter = express.Router();
+const bookingRouter = express.Router();
+app.use('/api/v1/users', userRouter);
+app.use('/api/v1/bookings', bookingRouter);
+
+userRouter.post('/create-user',appMiddleware,(req:Request,res:Response)=>
+{
+    const user =req.body;
+    console.log(user);
+    res.json({message:'User created successfully',
+        user
+    })
+})
+
+bookingRouter.post('/create-booking',appMiddleware,(req:Request,res:Response)=>
+{
+    const booking =req.body;
+    console.log(booking);
+    res.json({message:'Booking created successfully',
+        booking
+    })
+})
+
 app.get('/', appMiddleware, (req:Request, res:Response) => {
   res.send('Hello World!')
 })
